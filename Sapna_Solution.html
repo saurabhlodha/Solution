@@ -1,0 +1,83 @@
+<!doctype html public "-//w3c//dtd html 3.2//en">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+<!--
+.inner {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 14px;
+	color: #006;
+	text-align: center;
+	vertical-align: middle;
+}
+.Upper {
+	text-align: center;
+	font-family: "Comic Sans MS", cursive;
+	font-size: 18px;
+	font-style: italic;
+	color: #C00;
+	background-color: #FF3;
+}
+-->
+</style>
+<script language="javascript" src="list.js"></script>
+
+</head>
+
+<body onLoad="fillCategory();">
+<FORM name="drop_list" action="" method="POST" >
+<table width="100%">
+  <tr>
+    <td width="10%" height="50" bgcolor="#FFFF33">&nbsp;</td>
+    <td width="76%" bgcolor="#66FF99" class="Upper">Sapna Solutions Fresher's Problem</td>
+    <td width="14%" bgcolor="#FFFF33" >&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="378">&nbsp;</td>
+    <td>
+      <table width="100%" height="377">
+        <tr>
+          <td height="29" colspan="2" class="inner"><div id="foo"></div></td>
+		</tr>
+        <tr>
+          <td class="inner">Category</td>
+          <td class="inner">
+            <p class="inner">
+                <SELECT  NAME="Category" onChange="SelectSubCat();breadcrumbs()" >
+					<Option value="">Category</option>
+			</SELECT>&nbsp;            </p></td>
+        </tr>
+        <tr>
+          <td class="inner">Sub-Category</td>
+          <td class="inner">
+            <span class="inner">
+            <label>
+              <SELECT NAME="SubCat" id="SubCat" onChange="SelectSubCat2();breadcrumbs()">
+                <option>No Values</option>
+			  </SELECT>
+            </label>
+            </span></td>
+        </tr>
+        <tr>
+          <td height="130" class="inner">Sub Category</td>
+          <td class="inner">
+            <span class="inner">
+            <label>
+              <select NAME="SubCat2" id="SubCat2" onChange="breadcrumbs();">
+                <option>No Values</option>
+              </select>
+            </label>
+            </span></td>
+        </tr>
+     </table>    </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="73" bgcolor="#66FF99">&nbsp;</td>
+    <td bgcolor="#66FF99">&nbsp;</td>
+    <td bgcolor="#66FF99">&nbsp;</td>
+  </tr>
+</table>
+</FORM>
+</body></html>
